@@ -1,37 +1,38 @@
 <body>
+    <title>Video List</title>
 	<header>
 		<div>
 			<div>
-				<a href="./"><img src="logo.png" /></a>
+				<a href="./"><img src="logo.png"></a>
 			</div>
 			<div>
 				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
 				<div class="char_dropdown button_small">
 					<div>CREATE A CHARACTER</div>
 					<menu>
-						<a href="/cc?themeId=family&bs=adam">Adam</a>
-						<a href="/cc?themeId=family&bs=eve">Eve</a>
-						<a href="/cc?themeId=family&bs=bob">Bob</a>
-						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
+						<a href="/cc?themeId=family&amp;bs=adam">Adam</a>
+						<a href="/cc?themeId=family&amp;bs=eve">Eve</a>
+						<a href="/cc?themeId=family&amp;bs=bob">Bob</a>
+						<a href="/cc?themeId=family&amp;bs=rocky">Rocky</a>
 						<div></div>
-						<a href="/cc?themeId=business&bs=default">Business</a>
-						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
-						<a href="/cc?themeId=business&bs=kid">Kid</a>
+						<a href="/cc?themeId=business&amp;bs=default">Business</a>
+						<a href="/cc?themeId=business&amp;bs=heavy">Heavy</a>
+						<a href="/cc?themeId=business&amp;bs=kid">Kid</a>
 						<div></div>
-						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
-						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
+						<a href="/cc?themeId=whiteboard&amp;bs=default">Whiteboard</a>
+						<a href="/cc?themeId=whiteboard&amp;bs=kid">Whiteboard (Kid)</a>
 						<div></div>
-						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
-						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
+						<a href="/cc?themeId=anime&amp;bs=guy">Guy (Anime)</a>
+						<a href="/cc?themeId=anime&amp;bs=girl">Girl (Anime)</a>
 						<div></div>
-						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
-						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
+						<a href="/cc?themeId=ninjaanime&amp;bs=guy">Guy (Ninja Anime)</a>
+						<a href="/cc?themeId=ninjaanime&amp;bs=girl">Girl (Ninja Anime)</a>
 						<div></div>
-						<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
+						<a href="/cc?themeId=cc2&amp;bs=default">Lil Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+						<a href="/cc?themeId=chibi&amp;bs=default">Chibi Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+						<a href="/cc?themeId=ninja&amp;bs=default">Chibi Ninjas</a>
 						<div></div>
 						
 					</menu>
@@ -41,8 +42,7 @@
 		</div>
 		<div class="warning">
 			This service is not finished yet; some features may not be available at this time. Any and all videos may be
-			deleted at this stage of development.  It is recomended you download your videos to back them up.<br><a
-				href='https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper'>Link
+			deleted at this stage of development.  It is recomended you download your videos to back them up.<br><a href="https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper">Link
 				to the source code on GitHub</a>
 		</div>
 	</header>
@@ -55,15 +55,13 @@
 				<td></td>
 			</tr>
 		</thead>
-		<tbody></tbody>
+		
 		<tfoot>
-			<tr>
-				<td colspan="127"><a onclick="loadRows()" href="javascript:;">LOAD MORE...</a></td>
-			</tr>
+			
 		</tfoot>
 	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
-		<input id='file' type="file" onchange="this.form.submit()" name='import' />
+	<form enctype="multipart/form-data" action="/upload_movie" method="post">
+		<input id="file" type="file" onchange="this.form.submit()" name="import">
 	</form>
 	<script>
 		const closeReq = new XMLHttpRequest();
@@ -419,4 +417,5 @@
 			font-style: normal;
 		}
 	</style>
-</body>
+
+<input type="file" id="" name="file" style="display: none;"><div data-v-0a2a5063="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ialiedlpfknneamnbemcgmaboleiccdd/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-0a2a5063="" class="area"></div></div><style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>
